@@ -29,6 +29,16 @@
     <p>{{ post.date_time }}</p>
     <a href="{% url 'news_update' post.id %}" class="btn btn-outline-primary">Изменить</a>
     <a href="{% url 'news_delete' post.id %}" class="btn btn-outline-danger">Удалить</a>
+    <hr>
+    <p>Создать комментарий</p>
+    <form method="post">
+        <input type="text" placeholder="user_name" class="form-control">
+        <textarea placeholder="comment_text" class="form-control"></textarea>
+        <button type="submit" class="btn btn-outline-primary">Оставить комментарий</button>
+    </form>
+    <p>комментарии:</p>
+    <p>Юзер_1: Крутой сайт!</p>
+    <p>Юзер_2: Да соглашусь сайт крутой!</p>
 </div>
 
 </body>
