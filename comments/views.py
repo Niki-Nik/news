@@ -8,6 +8,5 @@ def create_comment(request):
     form = UserCommentForm()
     data = {
         "form": form,
-        "user_comments": user_comments,
     }
     return render(request, "news/details_view.html", data)
